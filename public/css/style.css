@@ -646,11 +646,33 @@ color: black;
   margin-top: 100px;
 }
 
-.btn
-{
-  float: left;
+/* SEE MORE FUNCTIONALITY */
+
+.popover { 
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  background-color: #eee;
+  width: 600px;
+  height: 300px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 4px;
 }
 
-/* ----------------PROJECTS PAGE----------------- */
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: black; 
+  background-color: #570f1e; 
+  margin-top: 8px;
+  font-family: 'Oleo Script', cursive;
+  
+}
+
 
 

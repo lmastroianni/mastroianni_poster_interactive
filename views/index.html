@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Johnny Cash</title>
-  <!--Link to reset first-->
+ 
 
   <!-- /<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
@@ -18,53 +18,6 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-  <!-- <div class="container">
-        <header id="mainHeader">
-          <div class="box nav">
-            <nav id="mainNav">
-              <h2 class="hidden">Main Navigation</h2>
-                <button id="button"></button>
-            <div id="burgerCon">
-                <ul id="burgerMenu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about_us.html">About Us</a></li>
-                  <li><a href="past_events.html">Past Events</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="links.html">Links</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-          </div>
-        </nav> -->
-
-          <!-- </div>
-          <div class="box logo">
-            <img src="images/traa_logo-MASTER_header.svg" alt="" height="250px" width="250px;">
-          </div>
-        </header>
-
-<header class="hidden deskNav">
-  <nav id="navMainLeft">
-    <h1 class="hidden">Main Navigation Desktop</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-        <li id="eventsLink"><a href="past_events.html">Past Events</a></li>
-      </ul>
-  </nav>
-
-    <div id="logo_middle" class="logo_middle">
-      <img src="images/traa_logo-MASTER_header.svg" alt="" height="280px" width="280px;">
-    </div>
-
-    <nav id="navMainRight">
-    <h1 class="hidden">Main Navigation Right</h1>
-    <ul>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="links.html">Links</a></li>
-      <li id="contactLink"><a href="contact.html">Contact Us</a></li>
-    </ul>
-    </nav>
-</header> -->
 
 <div class="container">
   <header class="header">
@@ -104,11 +57,9 @@
         </div>
         
         <div id="imageEvent1a">
-           <img src="images/caash1.svg" height="300" width="300" class="responsive" alt="cash">
+          <object data="images/caash1.svg" height="250" width="250" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
+          <span class="see-more" data-target="1">See More Info!</span>
         </div>
-        <div>
-      <button class=".btn">CLICK ME!</button>
-    </div>
       </section>
 
 
@@ -148,9 +99,10 @@
           thing Cash ever did.</p>
         </div>
         <div id="imageEvent2a">
-          <img src="images/finger.svg" height="250" width="250" class="responsive" alt="cash guitar">
+            <object data="images/finger.svg" height="250" width="250" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
+            <span class="see-more" data-target="2">See More Info!</span>
         </div>
-        <button class=".btn">CLICK ME!</button>
+      
       </section>
 
       <svg height="100%" width="100%">
@@ -174,9 +126,10 @@
         place.”</p>
       </div>
       <div id="imageEvent3a">
-        <img src="images/jaail.svg" height="250" width="250" class="responsive" alt="jail">
+          <object data="images/jaail.svg" height="250" width="250" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+          <span class="see-more" data-target="3">See More Info!</span>
       </div>
-      <button class=".btn">CLICK ME!</button>
+     
     </section>
 
     <svg height="100%" width="100%">
@@ -197,9 +150,10 @@
       <p class="mobileTextEvents"></p>
     </div>
     <div id="imageEvent4a">
-       <img src="images/graamy.svg" height="250" width="250"  class="responsive" alt="grammy">
+        <object data="images/graamy.svg" height="250" width="250" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="4">See More Info!</span>
    </div>
-   <button class=".btn">CLICK ME!</button>
+   
   </section>
 
   <svg height="100%" width="100%">
@@ -213,16 +167,20 @@
 
     </section>
 
+    <article class="popover">
+          <h4 class="ipa-rating">IPA Rating</h4>
+          <div class="ratings">Average Rating: </div>
+          <p class="beer-description"></p>
+        </article>
 
 
 
 
     
   
-<!--Load js at bottom-->
-  <script src="npm start
-  public/js/main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  
 <script>
   AOS.init();
 </script>
