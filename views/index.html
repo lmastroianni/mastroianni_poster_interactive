@@ -1,80 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Johnny Cash</title>
+  <!--Link to reset first-->
 
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- import waypoint and greensock -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
-    <title>SVG Animation with Waypoint and Greensock</title>
+  <!-- /<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+    
+ 
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bevan&display=swap" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-    <h1 class="main-header">SVG with Greensock and Waypoint.js</h1>
-    <main>
-        <!-- if we were using a framework, these might be 6-col or something-->
-        <section id="beer1">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/bottleGraphic.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
-            <span class="see-more" data-target="1">See More Info!</span>
+  <!-- <div class="container">
+        <header id="mainHeader">
+          <div class="box nav">
+            <nav id="mainNav">
+              <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+            <div id="burgerCon">
+                <ul id="burgerMenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about_us.html">About Us</a></li>
+                  <li><a href="past_events.html">Past Events</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="links.html">Links</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
           </div>
+        </nav> -->
 
-          <div class="text-wrapper">
-            <h3>Beer In Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
+          <!-- </div>
+          <div class="box logo">
+            <img src="images/traa_logo-MASTER_header.svg" alt="" height="250px" width="250px;">
           </div>
-        </section>
+        </header>
 
-        <section id="beer2">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/beerBarrels.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
-            <span class="see-more" data-target="2">See More Info!</span>
-          </div>
+<header class="hidden deskNav">
+  <nav id="navMainLeft">
+    <h1 class="hidden">Main Navigation Desktop</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li id="eventsLink"><a href="past_events.html">Past Events</a></li>
+      </ul>
+  </nav>
 
-          <div class="text-wrapper">
-            <h3>Beer In Barrels</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
-        </section>
+    <div id="logo_middle" class="logo_middle">
+      <img src="images/traa_logo-MASTER_header.svg" alt="" height="280px" width="280px;">
+    </div>
 
-        <section id="beer3">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/qualityBeer.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
-            <span class="see-more" data-target="3">See More Info!</span>
-          </div>
+    <nav id="navMainRight">
+    <h1 class="hidden">Main Navigation Right</h1>
+    <ul>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li id="contactLink"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </nav>
+</header> -->
 
-          <div class="text-wrapper">
-            <h3>Beer in Fancy Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-          </div>
-        </section>
+<div class="container">
+  <header class="header">
+    
+      <h1>Johnny Cash</h1>
+      <h2>Man In Black</h2>
+      <p>Live At Folsom Prison</p>
+    
+     
+  </header>
 
-        <article class="popover">
-          <h4 class="ipa-rating">IPA Rating</h4>
-          <div class="ratings">Average Rating: </div>
-          <p class="beer-description"></p>
-        </article>
-    </main>
-    <script src="js/main.js"></script>
+  
+
+    <div id="event2019"><h3>2019</h3></div>
+    <div class="lineTimeLineMobile"></div>
+
+
+    <section data-aos="fade-in" id="events">
+
+      <svg height="100%" width="100%">
+          <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+      </svg>
+
+      <section id="event1a">
+        <div class="dot1"></div>
+        <div id="textEvent1a">
+        <h3>Monday May 4, </h3>
+        <h2>The Album</h2>
+        <p class="mobileTextEvents">‘At Folsom Prison’ is a live album
+          by Johnny Cash, released in May
+          1968. Dressed in his trademark
+          black he performed for outlaws
+          and prisoners. He was the first
+          artist in music history to perform
+          in a prison, and it remains as
+          Cash’s most bought album.</p>
+        </div>
+        
+        <div id="imageEvent1a">
+           <img src="images/caash1.svg" height="300" width="300" class="responsive" alt="cash">
+        </div>
+        <div>
+      <button class=".btn">CLICK ME!</button>
+    </div>
+      </section>
+
+
+      <svg height="100%" width="100%">
+          <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+      </svg>
+
+      <div id="event2018"><h3>2018</h3></div>
+
+      <svg height="100%" width="100%">
+          <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+      </svg>
+
+      <section id="event2a">
+        <div class="dot2"></div>
+        <div id="textEvent2a">
+        <h3>Saturday October 13, 2018</h3>
+        <h2>The Story</h2>
+        <p class="mobileTextEvents">Marshall Grant (Cash’s manager)
+          claims that a prison performance
+          was a way to get something
+          out of him to release, because
+          he did’nt like being in
+          the studio. After several ideas
+          were pitched Cash came to the
+          conclusion of recording live at
+          Folsom Prison. They went to
+          Folsom to get Cash out of the
+          studio, and they loved the idea
+          of doing a nice gestures for the
+          prisoners because they can’t
+          get out to be entertained. As
+          far as making money, they
+          didn’t think it would pay
+          enough to sell for tape, but it
+          ended up being the biggest
+          thing Cash ever did.</p>
+        </div>
+        <div id="imageEvent2a">
+          <img src="images/finger.svg" height="250" width="250" class="responsive" alt="cash guitar">
+        </div>
+        <button class=".btn">CLICK ME!</button>
+      </section>
+
+      <svg height="100%" width="100%">
+          <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+      </svg>
+
+    <section id="event3a">
+      <div class="dot3"></div>
+      <div id="textEvent3a">
+      <h3>Saturday July 14, 2018</h3>
+      <h2>At Folsom</h2>
+      <p class="mobileTextEvents">The crew walked up to 18
+        foot cement walls and
+        could feel the somber
+        and desolate atmosphere.
+        John walked up
+        and said “Hello, my
+        name is Johnny Cash
+        and I’m going to blow
+        the roof off of this
+        place.”</p>
+      </div>
+      <div id="imageEvent3a">
+        <img src="images/jaail.svg" height="250" width="250" class="responsive" alt="jail">
+      </div>
+      <button class=".btn">CLICK ME!</button>
+    </section>
+
+    <svg height="100%" width="100%">
+        <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+    </svg>
+
+    <div id="event2017"><h3>2017</h3></div>
+
+    <svg height="100%" width="100%">
+        <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+    </svg>
+
+    <section id="event4a">
+      <div class="dot4"></div>
+      <div id="textEvent4a">
+      <h3>February 23 to February 25, 2017</h3>
+      <h2>Awards</h2>
+      <p class="mobileTextEvents"></p>
+    </div>
+    <div id="imageEvent4a">
+       <img src="images/graamy.svg" height="250" width="250"  class="responsive" alt="grammy">
+   </div>
+   <button class=".btn">CLICK ME!</button>
+  </section>
+
+  <svg height="100%" width="100%">
+      <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:4" />
+  </svg>
+
+  <div class="lineTimeLine">
+
+  </div>
+
+
+    </section>
+
+
+
+
+
+    
+  
+<!--Load js at bottom-->
+  <script src="npm start
+  public/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</div>
 </body>
 </html>
