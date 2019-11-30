@@ -3,10 +3,11 @@
     const seeMoreButtons = document.querySelectorAll('.see-more'),
         popOver = document.querySelector('.popover');
 
-        function buildPopover(beerdata, el) {
-            popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
-            popOver.querySelector(".ratings").textContent = `Average Rating: ${beerdata.ratings}`;
-            popOver.querySelector(".beer-description").textContent = beerdata.description;
+        function buildPopover(data, el) {
+            popOver.querySelector(".Graph").textContent = `Graph: ${data.Graph}`;
+            popOver.querySelector(".Description").textContent = `Description: ${data.Description}`;
+            popOver.querySelector(".beer-description").textContent = data.description;
+            // popOver.querySelector(".img").textContent = data.img;
     
             // show the popover
             popOver.classList.add('show-popover');
